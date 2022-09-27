@@ -1,0 +1,44 @@
+.frameDiv1{
+    display: inline-block;
+}
+.first{
+    margin-left: 75px;
+}
+.frameDiv2{
+    margin-left: 75px;
+}
+.imagesBir{
+    width:205px;
+    height: 200px;
+    display: inline-block;
+    border: 15px solid black;
+}
+.imagesBir1{
+    width:303px;
+    height: 240px;
+    display: inline-block;
+    border: 15px solid black;
+}
+.bblogo{
+    width:360px;
+    height: 320px;
+    display: inline-block;
+    border: 15px solid black;
+}
+
+/* img {
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+} */
+.pictureDiv {
+    border: 20px solid pink;
+    border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
+    border-image-slice: 20 22;
+    border-image-repeat: round;
+    width: 1500px;
+    height:1200px;
+    padding: 10px;
+    margin-left: 230px;
+  }
+  
+  
