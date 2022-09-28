@@ -31,14 +31,126 @@
     		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 } */
 .pictureDiv {
-    border: 20px solid pink;
+    border: 30px solid rgb(248, 188, 198);
     border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
     border-image-slice: 20 22;
     border-image-repeat: round;
     width: 1500px;
-    height:1200px;
+    height:1350px;
     padding: 10px;
     margin-left: 230px;
+    background-color: rgb(238, 226, 233);
+}
+.frameDiv3{
+    text-align: center;
+}
+#hbd{
+    font-size: 60px;
+    color: rgb(130, 88, 245);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(243, 127, 233), 0 0 5px darkblue;
+}
+#wishName{
+    font-size: 150px;
+    font-family: system-ui;
+    color: rgb(206, 108, 236);
+    text-shadow: 4px 2px 4px #000000;
+  
+}
+#videolink{
+    font-size: 35px;
+    text-decoration: none;
+    margin-right: 30px;
+    float: right;
+}
+#audiolink{
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+#videoScreen, #audioScreen{
+    margin-top: 80px;
+    text-align: center;
+}
+#headVideo, #headAudio{
+    font-size: 70px;
+}
+.videoFile, #audioFile{
+    margin-top: 50px;
+    display: inline-block;
+}
+#video1, #video2{
+    border:4px solid rgb(0, 0, 0);
+}
+#video1{
+    margin-right: 60px;
+}
+#video2{
+    margin-left: 80px;
+}
+#paraHead{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(3, 0, 8);
+    text-shadow: 2px 2px 2px #000000;
+}
+#audio1,#audio2{
+    border:4px solid rgb(0, 0, 0);
+}
+#audio1{
+    margin-right: 60px;
+}
+#audio2{
+    margin-left: 80px;
+}
+
+body {
+    background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7e8eb 100%);
+    overflow: hidden;
+}
+  
+  .ocean {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #015871;
   }
   
+  .wave {
+    background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  @keyframes swell {
+    0%,
+      100% {
+      transform: translate3d(0, -25px, 0);
+    }
+    50% {
+      transform: translate3d(0, 5px, 0);
+    }
+  }
+  .endWave{
+      display:none;
+  }
   
